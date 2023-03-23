@@ -1,0 +1,5 @@
+**/*.tar..gz
+model.tar.gz
+*.whl
+*.pt
+.ipynb_checkpoints
