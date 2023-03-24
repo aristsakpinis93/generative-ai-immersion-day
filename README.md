@@ -91,7 +91,7 @@ Congratulations!! You have successfully launched a SageMaker Studio Notebook and
 ## Clone Repository
 
 ```console
-git clone https://github.com/aristsakpinis93/llm-immersion-day.git
+git clone https://github.com/aristsakpinis93/generative-ai-immersion-day
 ```
 
 After completion of step 2 you will have llm-immersion-day folder created in left panel of the studio:
