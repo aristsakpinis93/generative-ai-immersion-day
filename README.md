@@ -66,9 +66,9 @@ The page can take 1 or 2 minutes to load when you access SageMaker Studio for th
 
 ![SageMaker loading](./img/sagemakerLoading.png)
 
-You will be redirected to a new web tab that looks like this:
+You will be redirected to a new web tab that looks like the below figure. Click Open Launcher.
 
-![SageMaker start](./img/sagemakerStart.png)
+![SageMaker start](./img/openLauncher.png)
 
 Under Notebooks and compute resources, make sure that the Data Science SageMaker image is selected and click on Notebook - Python 3.
 
