@@ -100,5 +100,9 @@ After completion of step 2 you will have llm-immersion-day folder created in lef
 
 ![Cloned repo](./img/cloned.png)
 
-Congratulations!! You have successfully downloaded the content of the Generative AI Immersion Day. From now on you can start working on the labs!
+Congratulations!! You have successfully downloaded the content of the Generative AI Immersion Day. From now on you can start working on the labs! 
+
+Lab 1 - Hosting Large Language Models can be found in the lab1 directory. Start with the notebook gpt-j-notebook-full.ipynb.
+
+Lab 2 - Finetuning Large Language Models can be found in the lab2 directory. Start with the notebook fine-tuning.ipynb.
 
