@@ -84,9 +84,7 @@ You can rename the notebook by right clicking on the name.
 
 ![Rename file](./img/renameFile.png)
 
-Congratulations!! You have successfully launched a SageMaker Studio Notebook.
-
-## Self-paced learning
+Congratulations!! You have successfully launched a SageMaker Studio Notebook and are now familiar with the basic flow within Sagemaker Studio. You will not need this specific one for the upcoming labs, however you can use the exact same notebook configuration (instance, image) throughout the upcoming labs.
 
 # Downloading the content of the GitHub repository needed for the labs
 
