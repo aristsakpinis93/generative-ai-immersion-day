@@ -20,41 +20,41 @@ For conducting the labs, some basic account setup steps are required. They are d
 
 ### Event Engine AWS Account access
 
-Go to: https://dashboard.eventengine.run/login . You will be redirected to the page below.
+[Click here](https://catalog.workshops.aws/join), paste in the access code and log in to the AWS Workshop Portal to proceed with the lab. 
 
-![EventEngine Access](./img/eventEngineAccess.png)
+Click Email One-Time Password (OTP) button.
 
-Enter the event hash you have received from your instructor.
+![Sign In](./img/3-sign-in.png)
 
-![EventHash](./img/eventHash.png)
+Write down your own email account and click the Send passcode button.
 
-Click on Email One-Time Password (OTP).
+![Passcode](./img/3-one-time-passcode.png)
 
-![OTP](./img/otp.png)
+In your email inbox, check for the email subject "Your one-time passcode email" and copy the passcode. Paste the copied passcode as shown below, then press the Sign in button.
 
-You are redirected to the following page:
+![Passcode 2](./img/3-one-time-passcode-2.png)
 
-![OTPMail](./img/otpEmail.png)
+Enter the 12-character Event Access Code received from the event organizer and click Next.
 
-Enter your email address and click on Send passcode.
+![Event Access Code](./img/3-event-access-code.png)
 
-![Send passcode](./img/sendPasscode.png)
+Read Terms and Condition and accept by selecting I agree with the Terms and Conditions. Click Join event.
 
-You are redirected to the following page:
+![Terms and Conditions](./img/3-terms-and-condition.png)
 
-![Enter passcode](./img/enterPasscode.png)
+In the next window that appears, click the Open AWS Console button. Note, that the workshop content and region can vary depending on your specific event.
 
-Check your mailbox, copy-paste the one-time password and click on Sign in.
+![Terms and Conditions](./img/3-test-event.png)
 
-You are redirected to the Team Dashboard. Click on AWS Console.
+The AWS Console will open in a new browser window.
 
-![Team dashboard](./img/teamDashboard.png)
+![Terms and Conditions](./img/3-event-generator-aws-console-3.png)
 
-On the next screen, click on Open AWS Console.
+If you see the following message, your browser has been previously logged into another AWS account.
 
-![Console login](./img/consoleLogin.png)
+Click the **"here"** link to logout of your AWS Console, go back to click on "*Open AWS Console*" button.
 
-You are then redirected to the AWS Console.
+![Terms and Conditions](./img/3-event-generator-aws-console-signout.png)
 
 Amazon SageMaker Studio Access: Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning that lets you build, train, debug, deploy, and monitor your machine learning models. Studio provides all the tools you need to take your models from experimentation to production while boosting your productivity.
 
