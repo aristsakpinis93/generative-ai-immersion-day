@@ -9,8 +9,7 @@ The repository is structured as follows: The slides can be found in the Generati
 - Lab 1 - Hosting Large Language Models can be found in the lab1 directory. Start with the notebook gpt-j-notebook-full.ipynb.
 - Lab 2 - Finetuning Large Language Models can be found in the lab2 directory. Start with the notebook fine-tuning.ipynb.
 - Lab 3 - Hosting Stable Diffusion can be found in the lab3 directory. Start with the notebook JumpStart_Stable_Diffusion_Inference_Only.ipynb.
-
-
+- Lab 4 - Building the LLM-powered chatbot "AWSomeChat" with retrieval-augmented generation
 
 For conducting the labs, some basic account setup steps are required. They are described subsequently in what follows.
 
