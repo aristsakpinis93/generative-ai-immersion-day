@@ -1,5 +1,5 @@
 #FROM --platform=linux/x86-64 python:3.11.1-slim
-FROM python:3.11.1-slim
+FROM public.ecr.aws/docker/library/python:3.11-slim
 
 WORKDIR /usr/src/app
 
