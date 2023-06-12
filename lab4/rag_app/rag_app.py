@@ -23,18 +23,19 @@ class ContentHandler(LLMContentHandler):
     accepts = "application/json"
 
     def transform_input(self, prompt, model_kwargs):
-        input_str = json.dumps({"text_inputs": prompt, **model_kwargs})
+        input_str = json.dumps({"inputs": prompt, "parameters": {**model_kwargs}})
         return input_str.encode('utf-8')
     
     def transform_output(self, output):
         response_json = json.loads(output.read().decode("utf-8"))
-        return response_json["generated_texts"][0]
+        return response_json[0]["generated_text"]
+
 
 content_handler = ContentHandler()
 
 llm=SagemakerEndpoint(
     endpoint_name="***ENDPOINT_NAME***",
-    model_kwargs={"temperature":0, "max_length":200},
+    model_kwargs={"do_sample": False, "repetition_penalty": 1.1, "return_full_text": False, "max_new_tokens":100},
     region_name=REGION, 
     content_handler=content_handler, 
 )
