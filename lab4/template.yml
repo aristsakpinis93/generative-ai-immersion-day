@@ -1,7 +1,10 @@
 ---
 Transform: AWS::Serverless-2016-10-31
-Resources:
+Parameters:
+  KendraIndexParameter:
+    Type: String
 
+Resources:
   RagAppApi:
     Type: AWS::Serverless::Api
     Properties:
@@ -17,7 +20,7 @@ Resources:
       Environment:
         Variables:
           REGION: !Ref "AWS::Region"
-          KENDRA_INDEX_ID: "***KENDRA_INDEX_ID***"
+          KENDRA_INDEX_ID: !Ref KendraIndexParameter
       Role: !GetAtt LambdaExecutionRole.Arn
       Events:
         ApiEvent:
@@ -313,5 +316,7 @@ Resources:
           KeyType: HASH
       BillingMode: PAY_PER_REQUEST
         
-    
-
+Outputs:
+  LoadBalancerDNSName:
+    Description: The URL of your Streamlit application
+    Value: !GetAtt LoadBalancer.DNSName
