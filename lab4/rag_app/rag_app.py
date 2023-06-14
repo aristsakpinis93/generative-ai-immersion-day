@@ -18,23 +18,38 @@ KENDRA_INDEX_ID = os.environ.get('KENDRA_INDEX_ID')
 
 
 # Generative LLM 
-class ContentHandler(LLMContentHandler):
-    content_type = "application/json"
-    accepts = "application/json"
 
-    def transform_input(self, prompt, model_kwargs):
-        input_str = json.dumps({"text_inputs": prompt, **model_kwargs})
-        return input_str.encode('utf-8')
+# Content Handler for Option 1 - FLAN-T5-XXL - please uncomment below if you used this option
+# class ContentHandler(LLMContentHandler):
+#     content_type = "application/json"
+#     accepts = "application/json"
+
+#     def transform_input(self, prompt, model_kwargs = {"temperature":0, "max_length":200}):
+#         input_str = json.dumps({"text_inputs": prompt, **model_kwargs})
+#         return input_str.encode('utf-8')
     
-    def transform_output(self, output):
-        response_json = json.loads(output.read().decode("utf-8"))
-        return response_json["generated_texts"][0]
+#     def transform_output(self, output):
+#         response_json = json.loads(output.read().decode("utf-8"))
+#         return response_json["generated_texts"][0]
+
+# Content Handler for Option 2 - Falcon40b-instruct - please uncomment below if you used this option
+# class ContentHandler(LLMContentHandler):
+#     content_type = "application/json"
+#     accepts = "application/json"
+
+#     def transform_input(self, prompt, model_kwargs = {"do_sample": False, "repetition_penalty": 1.1, "return_full_text": False, "max_new_tokens":100}):
+#         input_str = json.dumps({"inputs": prompt, "parameters": {**model_kwargs}})
+#         return input_str.encode('utf-8')
+    
+#     def transform_output(self, output):
+#         response_json = json.loads(output.read().decode("utf-8"))
+#         return response_json[0]["generated_text"]
+
 
 content_handler = ContentHandler()
 
 llm=SagemakerEndpoint(
     endpoint_name="***ENDPOINT_NAME***",
-    model_kwargs={"temperature":0, "max_length":200},
     region_name=REGION, 
     content_handler=content_handler, 
 )
