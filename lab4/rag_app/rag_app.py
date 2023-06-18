@@ -84,9 +84,8 @@ def lambda_handler(event, context):
 
 
     response = qa.run(query)   
-    assistant = response[0]["generated_text"][len(query):]
 
     return {
             'statusCode': 200,
-            'body': json.dumps(assistant)
+            'body': json.dumps(response)
         }
