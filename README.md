@@ -9,7 +9,9 @@ This workshop is set up following the popular AWS Immersion Day format. It means
 Note that during an immersion day / workshop potentially only a subset of these topics might be covered.
 
 The repository is structured as follows: The slides can be found in the GenerativeAIImmersionDayPresentationDeck.pdf residing on root level of the repository. Similarily, the labs can be found in respectively named directories: 
-- Lab 1 - Hosting Large Language Models can be found in the lab1 directory. Start with the notebook gpt-j-notebook-full.ipynb.
+- Lab 1 - Hosting Large Language Models can be found in the lab1 directory. 
+    - Option 1: For GPT-J start with the notebook option-1-gpt-j-notebook-full.ipynb.
+    - Option 2: For Falcon40b-instruct start with the notebook falcon40b-instruct-notebook-full.ipynb.
 - Lab 2 - Finetuning Large Language Models can be found in the lab2 directory. Start with the notebook fine-tuning.ipynb.
 - Lab 3 - Hosting Stable Diffusion can be found in the lab3 directory. Start with the notebook JumpStart_Stable_Diffusion_Inference_Only.ipynb.
 - Lab 4 - Building the LLM-powered chatbot "AWSomeChat" with retrieval-augmented generation. Start with the notebook rag-app.ipynb.
@@ -118,7 +120,9 @@ After completion of step 2 you will have llm-immersion-day folder created in lef
 
 Congratulations!! You have successfully downloaded the content of the Generative AI Immersion Day. From now on you can start working on the labs! 
 
-Lab 1 - Hosting Large Language Models can be found in the lab1 directory. Start with the notebook gpt-j-notebook-full.ipynb.
-
+Lab 1 - Hosting Large Language Models can be found in the lab1 directory. 
+- Option 1: For GPT-J start with the notebook option-1-gpt-j-notebook-full.ipynb.
+- Option 2: For Falcon40b-instruct start with the notebook falcon40b-instruct-notebook-full.ipynb.
 Lab 2 - Finetuning Large Language Models can be found in the lab2 directory. Start with the notebook fine-tuning.ipynb.
-
+Lab 3 - Hosting Stable Diffusion can be found in the lab3 directory. Start with the notebook JumpStart_Stable_Diffusion_Inference_Only.ipynb.
+Lab 4 - Building the LLM-powered chatbot "AWSomeChat" with retrieval-augmented generation. Start with the notebook rag-app.ipynb.
