@@ -1,5 +1,0 @@
-streamlit
-streamlit-chat
-streamlit-extras
-requests
-boto3

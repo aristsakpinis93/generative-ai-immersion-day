@@ -1,0 +1,13 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  RagAppStack:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location: template.yml
+
+Outputs:
+  LoadBalancerUrl:
+    Description: URL of the load balancer
+    Value: !Sub "http://${LoadBalancer.DNSName}"
