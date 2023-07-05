@@ -25,7 +25,7 @@ KENDRA_INDEX_ID = os.environ.get('KENDRA_INDEX_ID')
 #     accepts = "application/json"
 
 #     def transform_input(self, prompt, model_kwargs):
-#         input_str = json.dumps({"text_inputs": prompt, {"temperature":0, "max_length":200}})
+#         input_str = json.dumps({"text_inputs": prompt, "temperature": 0, "max_length": 200})
 #         return input_str.encode('utf-8')
     
 #     def transform_output(self, output):
